@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Undeviating 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140322
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Superama</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+	
+	 <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	
+
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+        	<span class="icon icon-cog"></span>
+			<h1><a href="#">SUPERAMA</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="#" accesskey="1" title="">INICIO</a></li>
+				<li><a href="#" accesskey="2" title="">NOSOTROS</a></li>
+				<li><a href="#" accesskey="3" title="">PRODUCTOS</a></li>
+				<li><a href="pedidoB.html" accesskey="4" title="">PEDIDOS</a></li>
+		
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div id="banner" class="container"><img src="images/p1.jpg" width="1200" height="500" alt="" /></div>
+
+<ul id="messages"></ul>
+
+
+	<script>
+      var socket = io();
+     
+      socket.on('chat message', function(msg){
+        console.log(msg);
+        //$('#prueba').text(msg);
+        $('#messages').append($('<li>').text(msg));
+      });
+    </script>
+
+
+
+	<div id="welcome" class="container">
+    	
+<div class="title">
+	  <h2>Bienvenidos</h2>
+		</div>
+		<p> Somos la empresa líder en el surtido de productos básicos para el hogar</p>
+		</div>
+	<div id="three-column" class="container">
+		<div><span class="arrow-down"></span></div>
+		<div id="tbox1">
+			<div class="title">
+				<h2>Lácteos</h2>
+			</div>
+			<p><img src="images/p11.jpg"/></p>
+			<a href="#" class="button">Entrar</a> </div>
+		<div id="tbox2">
+			<div class="title">
+				<h2>Carne</h2>
+			</div>
+			<p><img src="images/p4.jpg"/></p>
+			<a href="#" class="button">Entrar</a> </div>
+		<div id="tbox3">
+			<div class="title">
+				<h2>Comida</h2>
+			</div>
+			<p><img src="images/p3.jpg"/></p>
+			<a href="#" class="button">Entrar</a> </div>
+	</div>
+	<div id="portfolio" class="container">
+		<div class="column1">
+			<div class="box">
+			  <h3>Hogar</h3>
+				<p><img src="images/pic03.jpg" width="200" height="200" alt=""/></p>
+				<a href="#" class="button">Entrar</a> </div>
+		</div>
+		<div class="column2">
+			<div class="box">
+			  <h3>Maquillaje</h3>
+				<p><img src="images/pic04.jpg" width="200" height="200" alt=""/></p>			
+			<a href="#" class="button">Entrar</a> </div>
+		</div>
+		<div class="column3">
+			<div class="box">
+			  <h3>Deportes</h3>
+				<p><img src="images/pic01.jpg" width="200" height="200" alt=""/></p>
+				<a href="#" class="button">Entrar</a> </div>
+		</div>
+		<div class="column4">
+			<div class="box">
+			  <h3>Ropa</h3>
+			<p><img src="images/p2.jpg" width="200" height="200" alt=""/></p>
+		  <a href="#" class="button">Entrar</a> </div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="container">
+		
+	</div>
+</div>
+<div id="copyright">
+	
+</div>
+</body>
+</html>
